@@ -1,0 +1,26 @@
+---js
+{
+	pagination: {
+    data: "events",
+    alias: "event",
+    size: 1,
+    serverless: "{{ eleventy.serverless.path.url }}",
+    addAllPagesToCollections: true, 
+  },
+	permalink: {
+    onrequest: "{{ event.url }}"
+  },
+}
+---
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>{{ event.title }}</h1>
+    <p>URL: {{ event.url }}</p>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+node_modules
+netlify/functions/onrequest/**
+!netlify/functions/onrequest/index.js
+dist
+
+# Local Netlify folder
+.netlify

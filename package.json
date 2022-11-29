@@ -1,0 +1,12 @@
+{
+  "name": "serverless-events",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@netlify/functions": "^0.7.2"
+  }
+}
